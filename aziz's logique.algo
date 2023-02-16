@@ -1,0 +1,24 @@
+ALGORITHM checkpoint
+VAR 
+str:STRING;
+NBC,NBV,NBW:INTEGER:=0;
+i:INTEGER:=0;
+BEGIN
+Write ("please enter a sentence");
+WHILE(str(i)<>".") DO 
+read(str)
+NBC:= NBC+1;
+IF(str(i)=("a","y","e","u","o","i")) THEN
+NBV:=NBV+1
+END_IF
+IF (str(i)=" ") THEN
+NBW:=NBW+1
+END_IF
+i++
+END_WHILE
+Write(NBC);
+Write(NBV);
+Write(NBW);
+END
+
+
